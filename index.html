@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To sohrab</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      background: linear-gradient(to bottom, #1b1b2f, #162447);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+      overflow: auto;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .heart {
+      font-size: 40px;
+      animation: pulse 1s infinite;
+      color: #ff0077;
+      margin: 20px 0;
+    }
+    .button {
+      background: #ff4b5c;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #ff1e3c;
+    }
+    .book {
+      display: none;
+      max-width: 700px;
+      margin-top: 30px;
+      text-align: left;
+      background: linear-gradient(135deg, #ffe3ec, #f3d1f4);
+      color: #111;
+      padding: 35px 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+      animation: fadeIn 1s ease-in-out;
+    }
+    .book h2 {
+      font-size: 1.8em;
+      color: #b30059;
+      margin-bottom: 15px;
+    }
+    .book p {
+      line-height: 1.8;
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #ccc;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday Sohrab</h1>
+  <div class="heart">❤️</div>
+  <button class="button" onclick="showBook()">Open Your Birthday Book</button>
+  <div class="book" id="book">
+    <h2>Dear sohrab,</h2>
+    <p>You are the sunshine that brightens every corner of my life. Your kindness, smile, and presence make the world a better place. On this special day, I just want to say how lucky I feel to know you.</p>
+    <p>May your dreams be big, your worries small, and your heart always full of love. You are truly one of a kind.</p>
+    <p>Always stay the beautiful soul you are, because the world needs more people like you.</p>
+    <p style="margin-top: 30px; font-weight: bold;">With all my heart,</p>
+    <p style="font-style: italic; color: #b30059;">From the  afzal for you</p>
+  </div>
+  <script>
+    function showBook() {
+      document.getElementById('book').style.display = 'block';
+      document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
